@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!137 &437881868 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 984507509220692502, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
-  m_PrefabInstance: {fileID: 1882208950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,17 +351,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7728577922125686971, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -7728577922125686971, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -7728577922125686971, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
       propertyPath: m_LocalScale.z
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -4630769096629301653, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2532969152137654321, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2532969152137654321, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -2532969152137654321, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794375372953677613, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -425,12 +448,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8eb4735e4d234f4d84c1b624318dc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshToClone: {fileID: 437881868}
-  ClonnedMeshSystem: {fileID: 0}
+  meshToClone: {fileID: 2067281795}
   CloneMesh: 0
   blendsToClone: 
-  skinnedMeshRef: {fileID: 437881868}
-  meshToChange: {fileID: 437881868}
+  meshToChange: {fileID: 2067281795}
 --- !u!4 &1898835865
 Transform:
   m_ObjectHideFlags: 0
@@ -469,3 +490,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!137 &2067281795 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2532969152137654321, guid: ab8c23315e324b94a98a5b23d5f31b3d, type: 3}
+  m_PrefabInstance: {fileID: 1882208950}
+  m_PrefabAsset: {fileID: 0}
